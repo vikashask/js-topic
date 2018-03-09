@@ -1,6 +1,6 @@
 /* 
 Promises are an alternative to callbacks for delivering the results of an asynchronous computation.
-
+The following code contains a Promise-based function asyncFunc() and its invocation.
 */
 function asyncFunc() {
     return new Promise(
