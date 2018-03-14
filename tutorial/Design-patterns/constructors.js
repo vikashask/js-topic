@@ -7,10 +7,10 @@ member variables when the object is first created.
 function Car(model, year, miles) {
     this.model = model;
     this.year = year;
-this.miles = miles;
+    this.miles = miles;
 }
 this.toString = function () {
-return this.model + " has done " + this.miles + " miles";
+    return this.model + " has done " + this.miles + " miles";
 };
 var civic = new Car("Honda Civic", 2009, 20000);
 var mondeo = new Car("Ford Mondeo", 2010, 5000);
