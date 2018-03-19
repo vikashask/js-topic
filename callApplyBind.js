@@ -17,15 +17,15 @@ var greet1 = {
 user.greetUser.call(greet1,"vikash") // Output: "Hola vikash"
 
 /* 
-apply is nearly the same as call. The only difference is that you pass arguments as an array and not separately
-Arrays are easier to manipulate in JavaScript
+apply is nearly the same as call. The only difference is that you pass arguments as an array and 
+not separately Arrays are easier to manipulate in JavaScript
 */
 user.greetUser.apply(greet1,["vikash"]) // Output: "Hola vikash"
 
 console.log(Math.max.apply(null,[1,2,3]));
 /* 
-The bind method allows you to pass arguments to a function without invoking it. A new function is returned 
-with arguments bounded preceding any further arguments
+The bind method allows you to pass arguments to a function without invoking it. 
+A new function is returned with arguments bounded preceding any further arguments
  */
 
 var greetHola = user.greetUser.bind({greet: "Hola"});
