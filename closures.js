@@ -55,6 +55,6 @@ function celebrity() {
 
 let celeObj = celebrity();
 celeObj.getId;
-celeObj.setId(33);
-celeObj.getId();
+console.log(celeObj.setId(33));
+console.log(celeObj.getId());
 
