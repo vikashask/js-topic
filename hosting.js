@@ -1,4 +1,7 @@
-/* Hoisting is JavaScript's default behavior of moving all declarations to the top of the current scope 
+/* 
+Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top
+of their scope before code execution.
+Hoisting is JavaScript's default behavior of moving all declarations to the top of the current scope
 (to the top of the current script or the current function).
 */
 'use strict';

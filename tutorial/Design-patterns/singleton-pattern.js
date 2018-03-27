@@ -5,25 +5,26 @@ creating a class with a method that creates a new instance of the class if one d
 it restricts instantiation of a class to a single object.
 */
 
-    var Singleton = (function () {
-        var instantiated;
-        function init() {
+var Singleton = (function () {
+    var instantiated;
+
+    function init() {
         // singleton here
         return {
-        publicMethod: function () {
-        console.log('hello world');
-        },
-        publicProperty: 'test'
+            publicMethod: function () {
+                console.log('hello world');
+            },
+            publicProperty: 'test'
         };
-        }
-        return {
+    }
+    return {
         getInstance: function () {
-        if (!instantiated) {
-        instantiated = init();
+            if (!instantiated) {
+                instantiated = init();
+            }
+            return instantiated;
         }
-        return instantiated;
-        }
-        };
-        })();
-        // calling public methods is then as easy as:
-        Singleton.getInstance().publicMethod();
+    };
+})();
+// calling public methods is then as easy as:
+Singleton.getInstance().publicMethod();
