@@ -1,0 +1,30 @@
+/* AJAX = Asynchronous JavaScript And XML. A browser built-in XMLHttpRequest object (to request data from a web server) JavaScript
+and HTML DOM (to display or use the data) AJAX allows web pages to be updated asynchronously by exchanging data with a web
+server behind the scenes. */
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <div id="demo">
+        <h2>The XMLHttpRequest Object</h2>
+        <button type="button" onclick="doc()">Change Content</button>
+    </div>
+
+    <script>
+        function doc() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("demo").innerHTML =
+                        this.responseText;
+                }
+            };
+            xhttp.open("GET", "ajax_info.txt", true);
+            xhttp.send();
+        }
+    </script>
+
+</body>
+
+</html>
