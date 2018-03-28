@@ -13,6 +13,7 @@ server behind the scenes. */
 
     <script>
         function doc() {
+            // The XMLHttpRequest object is used to exchange data with a server./
             var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 200) {
@@ -20,7 +21,9 @@ server behind the scenes. */
                         this.responseText;
                 }
             };
-            xhttp.open("GET", "ajax_info.txt", true);
+            xhttp.open("GET", "/ajax_info.txt", true);
+            
+            // Sends the request to the server 
             xhttp.send();
         }
     </script>
