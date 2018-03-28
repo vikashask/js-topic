@@ -11,3 +11,10 @@ var myObj = {
 
 // Accessing Array Values
 x = myObj.cars[0];
+
+// Looping Through an Array
+for (i in myObj.cars) {
+    x += myObj.cars[i];
+} 
+
+
