@@ -1,16 +1,24 @@
 /* 
-The new.target property lets you detect whether a function or constructor was called using the new operator.
+Example : online transaction
  */
-function Foo() {
-    if (!new.target) throw 'Foo() must be called with new';
+function Foo(email) {
+    if(typeof(email) !== 'string'){
+      throw 'email type is not valid';
+    }
+console.log(email);
+
   }
   
   try {
-    Foo();
+    console.log("try block here");    
+    Foo("admi@gmail.com"); // for catch error pass any integer value
   }
   catch(e) {
+    console.log("catch here");
     console.log(e);
-    // expected output: "Foo() must be called with new"
+  }finally{
+    console.log("finally always execute");
+    
   }
 
   
