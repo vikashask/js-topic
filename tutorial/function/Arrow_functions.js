@@ -10,13 +10,21 @@ var materials = [
     'Beryllium'
   ];
   
+  console.log('------------by using function ------------------');
   materials.map(function(material) { 
-    return material.length; 
-  }); // [8, 6, 7, 9]
+    console.log(material);
+    // return material.length; // [8, 6, 7, 9]
+  }); 
   
   // using arrow function
+  console.log('---------- by using arrow function ------------');  
   materials.map((material) => {
-    return material.length;
-  }); // [8, 6, 7, 9]
+    console.log(material);
+    // return material.length; // [8, 6, 7, 9]
+  }); 
   
-  materials.map(({length}) => length); // [8, 6, 7, 9]
+  let materialsLength = materials.map(({length}) => length); // [8, 6, 7, 9]
+  let materialsArray = materials.map((length) => length); // [8, 6, 7, 9]
+  
+  console.log(materialsLength);
+  
