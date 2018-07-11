@@ -17,6 +17,6 @@ console.log(car.make);
 
 // Arrays
 var trees = ['redwood', 'bay', 'cedar', 'oak', 'maple'];
-0 in trees        // returns true
-3 in trees        // returns true
-6 in trees        // returns false
+console.log(0 in trees); // returns true
+console.log(3 in trees); // returns true 
+console.log(6 in trees); // returns false
