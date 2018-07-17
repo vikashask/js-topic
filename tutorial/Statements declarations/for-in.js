@@ -11,4 +11,4 @@ for (var property1 in object1) {
 }
 
 console.log(string1);
-// expected output: "123"
+// expected output: "567"
