@@ -2,6 +2,11 @@
  even after the outer function has returned control. A closure makes the variables of the inner
   function private
 
+  The closure has three scope chains: 
+  it has access to its own scope (variables defined between its curly brackets), 
+  it has access to the outer function’s variables, and 
+  it has access to the global variables
+
 Use of Closures : Closures are one of the most powerful features of JavaScript. 
 JavaScript allows for the nesting of functions and grants the inner function full access to all the variables
 and functions defined inside the outer function (and all other variables and functions that the outer function has access to)
