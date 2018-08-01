@@ -12,9 +12,15 @@ var myObj = {
 // Accessing Array Values
 x = myObj.cars[0];
 
-// Looping Through an Array
+// or...in statement is used to loop (iterate) through the elements of an array or through the properties of an object.
 for (i in myObj.cars) {
-    x += myObj.cars[i];
+    x += ' ' + myObj.cars[i];
+    console.log(x);
 } 
+
+// getting key name 
+for(let i in myObj){
+    console.log(i);
+}
 
 
