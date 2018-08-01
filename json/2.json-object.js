@@ -2,8 +2,9 @@
 // Accessing Object Values
 
  myObj = { "name":"John", "age":30, "car":null };
- x = myObj.name;
- x2 = myObj["name"];
+ console.log(myObj.name);
+//  or
+ console.log(myObj["name"]);
 
 //  Nested JSON Objects
 myObj2 = {
@@ -19,6 +20,12 @@ myObj2 = {
  console.log(myObj2.cars.car2);  // BMW
  //or:
  console.log(myObj2.cars["car2"]); // BMW
+ let getObj = myObj2.cars.car2;
+ console.log(getObj);
+ 
+ //or:
+ let getObj2 = myObj2.cars["car2"]; 
+ console.log(getObj2);
 
 //  Delete Object Properties
-delete myObj2.cars.car2; 
+console.log(delete myObj2.cars.car2);

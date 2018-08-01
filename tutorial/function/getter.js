@@ -12,6 +12,7 @@ var obj = {
     }
   }
   
+  // Note: if you remove get it will return function
   console.log(obj.latest);
   // expected output: "c"
   

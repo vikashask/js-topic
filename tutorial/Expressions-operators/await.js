@@ -13,6 +13,8 @@ function resolveAfter2Seconds(x) {
   }
   
   async function f1() {
+    console.log("await start");
+    
     var x = await resolveAfter2Seconds(10);
     console.log(x); // 10
   }
