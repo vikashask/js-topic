@@ -131,6 +131,7 @@ The array with name indexes are called associative array and the associative arr
 store the information.
 
 The number index array example as given below -
+
     var users = new Object();
     users["Name1"] = "vikash 1";
     users["Name2"] = "vikash 2";
@@ -140,6 +141,7 @@ alert(Object.keys(users).length); //output is 3.
     var length = Object.keys(users).length;  // 3
    
 The name index array example as given below -
+
     var users = [];
     users["Name1"] = "vikash 1";
     users["Name2"] = "vikash 2";
@@ -178,7 +180,9 @@ reuse the exiting objects as prototypes. The prototype inheritance also known as
 or instance based inheritances.
 
 The Inheritance example for prototype based as given below –
+
 //create a helper function.
+
     if (typeof Object.create !== 'function') {
         Object.create = function (obj) {
             function fun() { };
@@ -188,6 +192,7 @@ The Inheritance example for prototype based as given below –
     }
 
 //This is a parent class.
+
     var parent = {
         sayHi: function () {
             alert('Hi, I am parent!');
@@ -198,6 +203,7 @@ The Inheritance example for prototype based as given below –
     };
 
 //This is child class and the parent class is inherited in the child class.
+
     var child = Object.create(parent);
     child.sayHi = function () {
         alert('Hi, I am a child!');
@@ -208,6 +214,7 @@ HTML –
 //The output is: Hi, I am a child!
 
 ## What Is typeof Operator?
+
 The typeof operator is used to find the type of variables.
 
 The example as given below -
@@ -268,7 +275,9 @@ how to create the namespace in JavaScript.
 I am going to explain by example for add and remove properties from JavaScript objects as give below.
 
 This example for delete property -
+
 //This is the JSON object.
+
     var objectJSON = {
         id: 1,
         name: "vikash Singh",
@@ -276,22 +285,196 @@ This example for delete property -
     };
 
 //This is the process to delete
+
     delete objectJSON.dept;
 
 //Delete property by the array collection
+
     MyArrayColection.prototype.remove = function (index) {
         this.splice(index, 3);
     }
 
 This example for add property -
+
 //This is used to add the property.
+
     objectJSON.age = 30;
     console.log(objectJSON.age); //The result is 30;
 
 //This is the JSON object.
+
     var objectJSON = {
         id: 1,
         name: "vikash Singh",
         dept: "IT",
         age: 30
     };
+
+## How To Extending built-in Objects in JavaScript?
+JavaScript support built-in objects which use to develop the flexibility of JavaScript. The built in 
+object are date, string, math, array and object.
+
+It's very similar to other languages and it’s available in the window content and wok independently when 
+brewers are loaded.
+
+Example as give below -
+    var date = new Date(); //This is date built-in object.
+    var math = Math.abs(10); // this is math built-in object.
+    var string = "my string" // this is string built-in object.
+
+## Why Never Use New Array in JavaScript?
+We have some fundamental issues with new Array () the example in detail for array constructor function as given below.
+
+## When Array Have more than one Integer?
+    var newArray = new Array(10, 20, 30, 40, 50);
+
+    console.log(newArray[0]); //returns 10.
+    console.log(newArray.length); //returns 5.
+
+## When Array Have Only One Integer?
+    var newArray = new Array(10);
+    console.log(newArray[0]); //returns undefined
+    console.log(newArray.length); //returns 10 because it has an error "array index out of bound";
+
+//This is the fundamental deference to need to avoid the new array ();
+
+## What is eval() and floor() functions in JavaScript?
+The eval() function used in execute an argument as expression or we can say that evaluate a string as expression and it used to parse the JSON.
+
+The example over eval() function as given below -
+    var x = 14;
+    eval('x + 10'); //The output is 24.
+
+Another over eval() function example -
+    eval('var myEval = 10');
+    console.log(myEval); // The output is 10.
+
+The floor () function is a static method of Math and we can write as Math.floor() and used to round the number of downwards i.e.
+
+Math.floor(1.6);//The output is 1.
+
+## What is join() and isNaN() functions in JavaScript?
+The is join() function used to join the separator in the array.
+
+Syntax: myArray.join(mySeparator);
+
+The example as given below -
+var alfabets = ["A", "B", "C", "D"];
+
+//Join without seperator
+var result1 = alfabets.join();//The output is A B C D.
+
+//Join with seperator.
+var result2 = alfabets.join(','); //The output is A, B, C, D.
+
+The isNaN() function is used to check the value is not-a-number.
+
+The example as given below -
+    var var1 = isNaN(-1.23);//The output is false.
+    var var2 = isNaN(3);//The output is false.
+    var var3 = isNaN(0);//The output is false.
+    var var3 = isNaN("10/03/1984"); //The output is true.
+
+## What Is Closure in JavaScript?
+While you create the JavaScript function within another function and the inner function freely access all the variable of outer function i.e.
+
+    function ourterFun(i) {
+        var var1 = 3;
+        function innerFun(j) {
+            console.log(i + j + (++var1)); // It will return the 16.
+        }
+        innerFun(10);
+    }
+    ourterFun(2); // Pass an argument 2
+
+The output will get 16 because innerFun() function can access to the argument "i" & variable "var1" but 
+both are define in the outerFun() function that is closure.
+
+That means simply accessing variable outside of your scope creates a closure.
+
+//OR Other WAYS
+    function ourterFun(i) {
+        var var1 = 3;
+        return function (j) {
+            console.log(i + j + (++var1)); // It will return the 16.
+        }
+    }
+    var innerFun = ourterFun(2); // innerFun() function is now a closure.
+
+    innerFun(10);
+
+## What is JavaScript Hoisted?
+In the JavaScript, the variables can be used before declared, this kinds of mechanism is called Hoisted. 
+It's default behaviour of JavaScript.
+
+You can easily understanding in the below example in detail -
+//The variable declaration looks like.
+    var emp;
+
+//The variable initialization looks like.
+    emp = "vikash Singh";
+
+    var emp; //The declaration of emp is hoisted but the value of emp is  undefined.
+    emp = 10; //The Assignment still occurs where we intended (The value of emp is 10)
+
+    function getEmp() {
+        var emp; //The declaration of a different variable name emp is hoisted but the value of emp is  undefined.
+
+        console.log(emp); //The output is undefined
+        emp = 20; //The assignment values is 20.
+        console.log(emp); //The output is 20.
+    }
+getEmp();
+console.log(emp); //The variable named emp in the outer scope still contains 10.
+
+## What Is Function Overloading in JavaScript?
+There is no real function overloading in JavaScript and it allows passing any number of parameters of any type.
+
+You have to check inside the function how many arguments have been passed and what is the type arguments using typeof.
+
+The example for function overloading not supporting in JavaScript as gives below -
+    function sum(a, b) {
+        alert(a + b);
+    }
+    function sum(c) {
+        alert(c);
+    }
+    sum(3);//The output is 3.
+    sum(2, 4);//The output is 2.
+
+In the JavaScript, when we write more than one functions with same name that time JavaScript consider 
+the last define function and override the previous functions. You can see the above example output for the same.
+
+We can achieve using the several different techniques as give below -
+* You can check the declared argument name value is undefined.
+* We can check the total arguments with arguments.length.
+* Checking the type of passing arguments.
+* Using number of arguments
+* Using optional arguments like x=x || 'default'
+* Using different name in the first place
+* We can use the arguments array to access any given argument by using arguments[i]
+
+## What Is Prototype in JavaScript?
+The prototype is a fundamental concept of JavaScript and its must to known JavaScript developers.
+
+All the JavaScript objects have an object and its property called prototype and its used to add and the custom functions and property.
+
+The example without prototype as given below -
+    var employee = function () {
+    //This is a constructor  function.
+    }
+
+//Crate the instance of above constructor  function and assign in a variable
+    var empInstance = new employee();
+    empInstance.deportment = "IT";
+
+console.log(empInstance.deportment);//The output of above is IT.
+The example with prototype as given below.
+    var employee = function () { //This is a constructor  function.}
+
+    employee.prototype.deportment = "IT";//Now, for every instance employee will have a deportment.
+
+//Crate the instance of above constructor function and assign in a variable
+    var empInstance = new employee();
+    empInstance.deportment = "HR";
+    console.log(empInstance.deportment);//The output of above is IT not HR.
