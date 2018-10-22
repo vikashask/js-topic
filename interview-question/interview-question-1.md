@@ -25,23 +25,23 @@ The double equal “==” is an auto-type conversion and it checks only value no
 The three equal “===” is not auto-type conversion and it check value and type both.﻿
 
 ## The real example as given below –
-if(1 == ”1”)
+    if(1 == ”1”)
 //Its returns true because it's an auto-type conversion and it checks only value not type.
 
-if(1 === ”1”)
+    if(1 === ”1”)
 //Its returns false because it's not auto-type conversion and it check value and type both.
 
-If(1=== parseInt(”1”))
-// its returns true.
-// alert(0 == false); // return true, because both are same type.
-// alert(0 === false); // return false, because both are of a different type.
-// alert(1 == "1"); // return true, automatic type conversion for value only.
-// alert(1 === "1"); // return false, because both are of a different type.
-// alert(null == undefined); // return true.
-// alert(null === undefined); // return false.
-// alert('0' == false); // return true.
-// alert('0' === false); // return false.
-// alert(1=== parseInt("1")); // return true.
+    If(1=== parseInt(”1”))
+    // its returns true.
+    // alert(0 == false); // return true, because both are same type.
+    // alert(0 === false); // return false, because both are of a different type.
+    // alert(1 == "1"); // return true, automatic type conversion for value only.
+    // alert(1 === "1"); // return false, because both are of a different type.
+    // alert(null == undefined); // return true.
+    // alert(null === undefined); // return false.
+    // alert('0' == false); // return true.
+    // alert('0' === false); // return false.
+    // alert(1=== parseInt("1")); // return true.
 
 ## What Is an Object?
 The object is a collection of properties and the each property associated with the name-value pairs. The object can contain any data types (numbers, arrays, object etc.)
@@ -55,8 +55,8 @@ The properties name can me string or number. If a property name is number i.e.
 
 var numObject= {1 : “001”, 2 :”X0091”};
 
-Console.log(numObject.1); //This line throw an error.
-Console.log(numObject[“1”]); // will access to this line not get any error.
+    Console.log(numObject.1); //This line throw an error.
+    Console.log(numObject[“1”]); // will access to this line not get any error.
 
 As per my thought, the number property name should be avoided.
 
@@ -70,21 +70,21 @@ The empty object initialized using object literal i.e.
 var emptyObj = {};
 
 This is an object with 4 items using object literal i.e.
-var emptyObj ={
-    empId:”Red”,
-    empCode: “X0091”,
-    empDetail : function(){
-        alert(“Hi”);
+    var emptyObj ={
+        empId:”Red”,
+        empCode: “X0091”,
+        empDetail : function(){
+            alert(“Hi”);
+        };
     };
-};
 
 ``` Object Constructor: The second way to create object using object constructor and the constructor is a function used to initialize new object. ```
 
 The example as given below -
-var obj = new Object();
-Obj.empId=”001”;
-Obj.empCode=”X0091”;
+    var obj = new Object();
+    Obj.empId=”001”;
+    Obj.empCode=”X0091”;
 
-Obj.empAddressDetai = function(){
-    console.log(“Hi, I vikash”);
-};
+    Obj.empAddressDetai = function(){
+        console.log(“Hi, I vikash”);
+    };
