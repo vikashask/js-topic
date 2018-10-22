@@ -88,3 +88,34 @@ The example as given below -
     Obj.empAddressDetai = function(){
         console.log(“Hi, I vikash”);
     };
+
+## What Is Scope Variable in JavaScript?
+The scope is set of objects, variables and function and the JavaScript can have global scope variable and local scope variable.
+
+The global scope is a window object and it’s used out of function and within the functions.
+
+The local scope is a function object and it’s used within the functions.
+
+The example for global scope variable -
+    var gblVar = "vikash Singh";
+    function getDetail() {
+        console.log(gblVar);
+    }
+
+And other example for global -
+    function demoTest() {
+        x = 15;
+    };
+console.log(x); //output is 15
+
+The example for local scope variable -
+    function getDetail() {
+        var gblVar = "vikash Singh";
+        console.log(gblVar);
+    }
+
+And other example for local -
+    function demoText() {
+            var x = 15;
+    };
+console.log(x); //undefined
