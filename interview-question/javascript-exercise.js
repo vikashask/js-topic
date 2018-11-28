@@ -152,6 +152,25 @@ const obj  = {
 
 obj.getA().getB();
 
+// 15 print this
+[1,2].print();   // 1,2
+
+// 1st way
+Array.prototype.print = () => {
+    console.log(`${this[0]} , ${this[1]}`);
+} 
+
+// 16 reverse string
+const a =function(x){
+    this.x = x;
+}
+const b =function(x,y){
+    this.y = y;
+}
+const newB = new b('x','y');
+newB.getX();
+newB.getY();
+
 
 
 
