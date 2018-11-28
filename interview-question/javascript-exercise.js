@@ -89,6 +89,26 @@ profile.age = 14;
 console.log(profile);
 
 
+// 11 why infinte
+console.log(Math.max()); // - infinity 
+
+
+//12 get only array from object 
+
+// 1.way
+let x = {
+    a:1,
+    b:2
+};
+
+const xArr = Object.entries(x);
+
+// 2nd way
+const Arrayx = []
+for(let i in x){
+    Arrayx.push(i);
+}
+
 
 
 
