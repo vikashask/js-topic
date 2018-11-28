@@ -67,6 +67,27 @@ console.log(profile);
 
 // use Object.freeze(profile)
 
+//  9 update propery only not to add
+
+ Object.seal(profile)
+
+//10 Add property but read only
+
+
+let profile = {
+    name:'vikash'
+}
+
+Object.defineProperties(profile,'age',{
+    value:3,
+    writable:false
+})
+
+profile.name = 'verma';
+profile.age = 14;
+
+console.log(profile);
+
 
 
 
