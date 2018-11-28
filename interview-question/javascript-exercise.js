@@ -47,6 +47,15 @@ console.log(a("hi"));
 let b = (...n) => {return n};
 console.log(b("hi"));
 
+// 7 o/p
+
+let x  = function(){
+    return {
+        mess:'hi'
+    }
+}
+console.log(x());
+
 
 
 
