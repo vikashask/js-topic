@@ -191,6 +191,33 @@ const b = [2,56,8,7];
 const c = a.concat(b).sort((a,b) => a>b );
 
 
+// 19 reverse string
+const obj = {
+    x:1,
+    getX(){
+        const inner = function() {
+            console.log(this.x)
+        }
+        inner;
+    }
+}
+
+obj.getX();
+
+// 20 reverse string
+const obj = {
+    x:1,
+    getX(){
+        const inner = function() {
+            console.log(this.x) // bind
+        }
+        inner.call(this);
+    }
+}
+
+obj.getX();
+
+
 
 
 
