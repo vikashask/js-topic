@@ -14,3 +14,27 @@ let fun = function() {
 }
 
 fun();
+
+
+// 3 Immediately scope function
+let fun = function() {
+    { 
+        (function(){
+            let l = 'let';
+            var v = 'var';
+        })();
+    }
+    console.log(v);
+    console.log(l);
+    
+}
+
+fun();
+
+//4 O/p
+console.log(5<6<7); // true<7  // 1<7 // true
+
+console.log(5>6>7); // true > 6 false true means 1
+
+
+
