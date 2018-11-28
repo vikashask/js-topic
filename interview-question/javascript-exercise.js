@@ -37,4 +37,17 @@ console.log(5<6<7); // true<7  // 1<7 // true
 console.log(5>6>7); // true > 6 false true means 1
 
 
+// 5 o/p
+
+let a = () => arguments;
+console.log(a("hi"));
+
+// 6 o/p
+
+let b = (...n) => {return n};
+console.log(b("hi"));
+
+
+
+
 
