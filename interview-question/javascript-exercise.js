@@ -110,5 +110,51 @@ for(let i in x){
 }
 
 
+// 13 reverse string
+let x = "hi";
+let y = "ih";
+
+const reverseStr = (str) =>{
+    str.split('').reverse().join('')
+}
+
+console.log(reverseStr === y);
+
+// 14 object value
+
+// is this correct
+const obj  = {
+    a:1,
+    b:2,
+    getA(){
+        console.log(this.a);
+    },
+    getB(){
+        console.log(this.b);
+    }
+}
+
+obj.getA().getB();
+// no
+
+// correct one is 
+const obj  = {
+    a:1,
+    b:2,
+    getA(){
+        console.log(this.a);
+        return this; // have to return
+    },
+    getB(){
+        console.log(this.b);
+    }
+}
+
+obj.getA().getB();
+
+
+
+
+
 
 
