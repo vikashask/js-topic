@@ -171,6 +171,25 @@ const newB = new b('x','y');
 newB.getX();
 newB.getY();
 
+// 17 clone 
+const obj = {
+    a:{
+        b:{
+            c:1
+        }
+    }
+}
+const clone  = Object.assign({},obj);
+
+clone.a.b.c = 2;
+console.log(obj.a.b.c);
+
+// 18 reverse string
+const a = [1,2,3,3];
+const b = [2,56,8,7];
+
+const c = a.concat(b).sort((a,b) => a>b );
+
 
 
 
