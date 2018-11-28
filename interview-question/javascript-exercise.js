@@ -56,6 +56,17 @@ let x  = function(){
 }
 console.log(x());
 
+// 8 how to prevent addding property
+
+let profile = {
+    name:'vikash'
+}
+
+profile.age = 3;
+console.log(profile);
+
+// use Object.freeze(profile)
+
 
 
 
