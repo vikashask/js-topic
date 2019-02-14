@@ -1,6 +1,6 @@
 /* 
 The Date object lets you work with dates (years, months, days, hours, minutes, seconds, and milliseconds)
-
+Best approch is http://momentjs.com/docs
 There are 4 ways of initiating a date:
 */
 

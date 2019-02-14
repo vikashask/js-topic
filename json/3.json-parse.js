@@ -20,4 +20,4 @@ console.log(objText);
 
 // eval : evaluates or executes an argument
 obj.age = eval("(" + obj.age + ")");
-console.log(obj.age);
+console.log('obj.age-',obj.age);
