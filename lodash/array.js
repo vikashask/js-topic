@@ -1,7 +1,7 @@
-_.chunk
-_.compact
-_.concat
-_.difference
+_.chunk     // Creates an array of elements split into groups the length of size
+_.compact // Creates an array with all falsey values removed.
+_.concat  // Creates a new array concatenating array with any additional arrays and/or values.
+_.difference // Creates an array of array values not included in the other given arrays using SameValueZero for equality comparisons. 
 _.differenceBy
 _.differenceWith
 _.drop
