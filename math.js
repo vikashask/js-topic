@@ -42,3 +42,31 @@ Math.log1p(x)
 // Returns the natural logarithm (loge, also ln) of 1 + x for a number x.
 Math.log10(x)
 // Returns the base 10 logarithm of a number.
+Math.log2(x)
+// Returns the base 2 logarithm of a number.
+Math.max([x[, y[, …]]])
+// Returns the largest of zero or more numbers.
+Math.min([x[, y[, …]]])
+// Returns the smallest of zero or more numbers.
+Math.pow(x, y)
+// Returns base to the exponent power, that is, baseexponent.
+Math.random()
+// Returns a pseudo-random number between 0 and 1.
+Math.round(x)
+// Returns the value of a number rounded to the nearest integer.
+Math.sign(x)
+// Returns the sign of the x, indicating whether x is positive, negative or zero.
+Math.sin(x)
+// Returns the sine of a number.
+Math.sinh(x)
+// Returns the hyperbolic sine of a number.
+Math.sqrt(x)
+// Returns the positive square root of a number.
+Math.tan(x)
+// Returns the tangent of a number.
+Math.tanh(x)
+// Returns the hyperbolic tangent of a number.
+Math.toSource() 
+// Returns the string "Math".
+Math.trunc(x)
+// Returns the integer part of the number x, removing any fractional digits.
