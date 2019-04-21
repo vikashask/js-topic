@@ -32,7 +32,7 @@ Math.floor(x)
 // Returns the largest integer less than or equal to a number.
 Math.fround(x)
 // Returns the nearest single precision float representation of a number.
-Math.hypot([x[, y[, …]]])
+// Math.hypot([x[, y[, …]]])
 // Returns the square root of the sum of squares of its arguments.
 Math.imul(x, y)
 // Returns the result of a 32-bit integer multiplication.
@@ -44,9 +44,11 @@ Math.log10(x)
 // Returns the base 10 logarithm of a number.
 Math.log2(x)
 // Returns the base 2 logarithm of a number.
-Math.max([x[, y[, …]]])
+// Math.max([x[, y[, …]]])
+console.log(Math.max(1, 3, 2));
 // Returns the largest of zero or more numbers.
-Math.min([x[, y[, …]]])
+// Math.min([x[, y[, …]]])
+console.log(Math.min(2, 3, 1));
 // Returns the smallest of zero or more numbers.
 Math.pow(x, y)
 // Returns base to the exponent power, that is, baseexponent.
