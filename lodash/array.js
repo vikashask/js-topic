@@ -15,25 +15,30 @@ _.flatten
 _.flattenDeep
 _.flattenDepth
 _.fromPairs
-_.head
-_.indexOf
-_.initial
+_.head      // Gets the first element of array.
+_.indexOf   // Gets the index at which the first occurrence of value is found in array
+_.initial   // Gets all but the not last element of array.
 _.intersection
 _.intersectionBy
 _.intersectionWith
-_.join
-_.last
-_.lastIndexOf
-_.nth
-_.pull
-_.pullAll
+_.join  // Converts all elements in array into a string separated by separator.
+        //_.join(['a', 'b', 'c'], '~');
+_.last  // Gets the last element of array.
+_.lastIndexOf   // This method is like _.indexOf except that it iterates over elements of array from right to left.
+_.nth   // Gets the element at index n of array. If n is negative, the nth element from the end is returned.
+_.pull  //Removes all given values from array using SameValueZero for equality comparisons.
+
+_.pullAll   // This method is like _.pull except that it accepts an array of values to remove.
+
 _.pullAllBy
 _.pullAllWith
-_.pullAt
-_.remove
-_.reverse
-_.slice
-_.sortedIndex
+_.pullAt    // Removes elements from array corresponding to indexes and returns an array of removed elements.
+
+_.remove    //Removes all elements from array
+_.reverse   //Reverses array so that the first element becomes the last
+_.slice     //Creates a slice of array from start up to, but not including, end.
+
+_.sortedIndex   
 _.sortedIndexBy
 _.sortedIndexOf
 _.sortedLastIndex
