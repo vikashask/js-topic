@@ -4,13 +4,13 @@ _.concat  // Creates a new array concatenating array with any additional arrays 
 _.difference // Creates an array of array values not included in the other given arrays using SameValueZero for equality comparisons. 
 _.differenceBy
 _.differenceWith
-_.drop
-_.dropRight
+_.drop      // Creates a slice of array with n elements dropped from the beginning.
+_.dropRight //Creates a slice of array with n elements dropped from the end.
 _.dropRightWhile
 _.dropWhile
-_.fill
-_.findIndex
-_.findLastIndex
+_.fill // Fills elements of array with value from start up to, but not including, end.
+_.findIndex  // This method is like _.find except that it returns the index of the first element predicate returns truthy for instead of the element itself.
+_.findLastIndex // This method is like _.findIndex except that it iterates over elements of collection from right to left.
 _.flatten
 _.flattenDeep
 _.flattenDepth
