@@ -10,8 +10,8 @@ _.flatMapDeep
 _.flatMapDepth
 _.forEach
 _.forEachRight  // This method is like _.forEach except that it iterates over elements of collection from right to left.
-_.groupBy
-_.includes
+_.groupBy   //Creates an object composed of keys generated from the results of running each element of collection thru iteratee.
+_.includes  // Checks if value is in collection.
 _.invokeMap
 _.keyBy
 _.map
