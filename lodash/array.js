@@ -44,11 +44,12 @@ _.sortedIndexOf
 _.sortedLastIndex
 _.sortedLastIndexBy
 _.sortedLastIndexOf
-_.sortedUniq
+_.sortedUniq    //  Returns the new duplicate free array.
 _.sortedUniqBy
-_.tail
-_.take
-_.takeRight
+
+_.tail  // Gets all but not the first element of array.
+_.take  //Creates a slice of array with n elements taken from the beginning.
+_.takeRight // Creates a slice of array with n elements taken from the end.
 _.takeRightWhile
 _.takeWhile
 _.union
