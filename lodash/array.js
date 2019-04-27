@@ -52,11 +52,11 @@ _.take  //Creates a slice of array with n elements taken from the beginning.
 _.takeRight // Creates a slice of array with n elements taken from the end.
 _.takeRightWhile
 _.takeWhile
-_.union
+_.union // Creates an array of unique values, in order, from all given arrays using SameValueZero for equality comparisons.
 _.unionBy
 _.unionWith
-_.uniq
-_.uniqBy
+_.uniq  // Creates a duplicate-free version of an array
+_.uniqBy // This method is like _.uniq except that it accepts iteratee which is invoked for each element in array to generate the criterion by which uniqueness is computed
 _.uniqWith
 _.unzip
 _.unzipWith
