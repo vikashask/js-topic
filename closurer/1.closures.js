@@ -22,9 +22,9 @@ let count = (function () {
     }
 });
 
-count(); // // the counter is now 1
-count(); // // the counter is now 2
-count(); // // the counter is now 3
+count(); // the counter is now 1
+count(); // the counter is now 2
+count(); // the counter is now 3
 
 console.log("example 2");
 
